@@ -1,58 +1,22 @@
-# LK-OFFICIAL-STORE
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LK STORE</title>
-  <link rel="stylesheet" href="style.css">
+  <title>LK Official Store</title>
 </head>
 <body>
+  <h1>Game Top-Up</h1>
 
-<!-- HEADER -->
-<header>
-  <div class="menu">☰</div>
-  <h1>THOIBI STORE 0.2</h1>
-  <div class="icons">🔔 👤</div>
-</header>
+  <form action="order.php" method="POST">
+    <input type="text" name="userid" placeholder="User ID" required><br>
+    <input type="text" name="server" placeholder="Server ID" required><br>
 
-<!-- SEARCH -->
-<div class="search">
-  <input type="text" placeholder="Search games...">
-</div>
+    <select name="package">
+      <option value="86">86 Diamonds - ₹80</option>
+      <option value="172">172 Diamonds - ₹150</option>
+      <option value="weekly">Weekly Pass - ₹135</option>
+    </select><br>
 
-<!-- SLIDER -->
-<div class="slider">
-  <img id="slide" src="assets/banner1.jpg">
-</div>
-
-<!-- OFFERS -->
-<h2>Featured Offers</h2>
-<p class="no-offer">No active offers.</p>
-
-<!-- GAME SECTION -->
-<h2>Select Game</h2>
-
-<div class="grid">
-
-  <div class="card">
-    <img src="assets/bonus.jpg">
-    <h3>DOUBLE BONUS (INDIA)</h3>
-    <p>MOBA</p>
-  </div>
-
-  <div class="card">
-    <img src="assets/mlbb.jpg">
-    <h3>MOBILE LEGEND (INDIA)</h3>
-    <p>MOBA</p>
-  </div>
-
-  <div class="card">
-    <img src="assets/twilight.jpg">
-    <h3>TWILIGHT PASS</h3>
-    <p>MOBA</p>
-  </div>
-
-</div>
-
-<script src="script.js"></script>
+    <button type="submit">Buy Now</button>
+  </form>
 </body>
 </html>
