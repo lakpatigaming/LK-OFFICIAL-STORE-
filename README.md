@@ -20,3 +20,18 @@
   </form>
 </body>
 </html>
+
+<?php
+$userid = $_POST['userid'];
+$server = $_POST['server'];
+$package = $_POST['package'];
+
+// Save order
+$conn = new mysqli("localhost", "root", "", "topup");
+
+$sql = "INSERT INTO orders(userid, server, package)
+VALUES ('$userid','$server','$package')";
+$conn->query($sql);
+
+echo "Order Placed Successfully!";
+?>
